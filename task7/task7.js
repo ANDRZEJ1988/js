@@ -112,27 +112,27 @@
 // (Додатковачастина для завдання)
 //
 
-let btn = document.querySelector('#butTable');
-btn.onclick = () => {
-    let tab = document.createElement('table');
-    tab.style.border = 'inset';
-    let row = Number(document.forms.tableee.row.value);
-    let cell = Number(document.forms.tableee.cell.value);
-    let content = document.forms.tableee.content.value;
-    for (let i = 0; i < row; i++) {
-        let str = document.createElement('tr');
-        str.style.border = 'double';
-        for (let j = 0; j < cell; j++) {
-            let cells = document.createElement('td');
-            cells.style.border = 'double';
-            cells.innerText = content;
-            str.appendChild(cells);
-            tab.appendChild(str);
-            document.body.appendChild(tab);
-        }
-
-    }
-}
+// let btn = document.querySelector('#butTable');
+// btn.onclick = () => {
+//     let tab = document.createElement('table');
+//     tab.style.border = 'inset';
+//     let row = Number(document.forms.tableee.row.value);
+//     let cell = Number(document.forms.tableee.cell.value);
+//     let content = document.forms.tableee.content.value;
+//     for (let i = 0; i < row; i++) {
+//         let str = document.createElement('tr');
+//         str.style.border = 'double';
+//         for (let j = 0; j < cell; j++) {
+//             let cells = document.createElement('td');
+//             cells.style.border = 'double';
+//             cells.innerText = content;
+//             str.appendChild(cells);
+//             tab.appendChild(str);
+//             document.body.appendChild(tab);
+//         }
+//
+//     }
+// }
 
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
 //
